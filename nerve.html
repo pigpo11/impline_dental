@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신경치료 - 임플라인치과의원 포천점</title>
+    <meta name="description" content="임플라인치과는 자연치아를 최대한 보존합니다.">
+    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="stylesheet" href="subpage.css?v=6">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .save-tooth-hero {
+            padding: 100px 0;
+            background-color: #f7f7f7;
+            position: relative;
+        }
+        .st-hero-images {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 50px;
+            height: 400px;
+        }
+        .st-side {
+            flex: 1;
+            border-radius: 4px;
+        }
+        .st-main {
+            flex: 1.5;
+            border-radius: 4px;
+        }
+        .st-hero-text h1 {
+            font-size: 34px;
+            font-weight: 500;
+            line-height: 1.4;
+            color: #222;
+            margin-bottom: 20px;
+        }
+        .st-hero-text p {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .tooth-steps-section {
+            padding: 120px 0;
+            background-color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .ts-title {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        .ts-title h2 {
+            font-size: 36px;
+            font-weight: 500;
+            color: #222;
+        }
+        .ts-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .ts-item {
+            display: flex;
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+        .ts-num {
+            font-size: 40px;
+            color: #c9bca6;
+            font-weight: 300;
+            white-space: nowrap;
+            width: 120px;
+            text-align: right;
+        }
+        .ts-text h3 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 15px;
+            margin-top: 10px;
+        }
+        .ts-text p {
+            font-size: 15px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .nerve-cases-section {
+            padding: 120px 0;
+            background-color: #fcfcfc;
+        }
+        
+        @media (max-width: 1024px) {
+            .st-hero-images {
+                flex-direction: column;
+                height: auto;
+            }
+            .st-main, .st-side {
+                height: 300px;
+            }
+            .ts-item {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+            .ts-num {
+                width: 100%;
+                text-align: center;
+            }
+            .nerve-cases-layout {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="main-header" style="position: sticky; background: rgba(255, 255, 255, 0.95); padding: 20px 60px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); color: #212121; z-index: 1000;">
+        <a href="index.html" class="logo" style="text-decoration: none; color: inherit; cursor: pointer;">임플라인치과 <span>| 포천점</span></a>
+        <nav>
+            <ul>
+                <li><a href="about.html">임플라인 소개</a></li>
+                <li><a href="wisdom-tooth.html">사랑니발치</a></li>
+                <li><a href="implant.html">임플란트</a></li>
+                <li><a href="sleep-treatment.html">수면치료</a></li>
+                <li>
+                    <a href="save-tooth.html">자연치아살리기</a>
+                    <ul class="dropdown">
+                        <li><a href="cavity.html">충치치료</a></li>
+                        <li><a href="nerve.html">신경치료</a></li>
+                        <li><a href="scaling.html">스케일링</a></li>
+                        <li><a href="gums.html">잇몸치료</a></li>
+                    </ul>
+                </li>
+                <li><a href="orthodontics.html">치아교정</a></li>
+                <li><a href="whitening.html">치아미백</a></li>
+                <li><a href="tmj.html">턱관절치료</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Subpage Menu -->
+    <div class="page-submenu">
+        <div class="container">
+            <a href="save-tooth.html">충치치료</a>
+            <a href="nerve.html" class="active">신경치료</a>
+            <a href="scaling.html">스케일링</a>
+            <a href="gums.html">잇몸치료</a>
+        </div>
+    </div>
+
+    <!-- Floating Quick Menu -->
+    <div class="quick-menu">
+        <div class="quick-item" title="네이버 예약"><i data-lucide="calendar-check"></i><span>네이버 예약</span></div>
+        <div class="quick-item" title="블로그"><i data-lucide="layout"></i><span>블로그</span></div>
+        <div class="quick-item" title="톡톡 상담"><i data-lucide="message-square"></i><span>톡톡 상담</span></div>
+        <div class="quick-item" title="카카오톡"><i data-lucide="message-circle"></i><span>카카오톡</span></div>
+        <div class="quick-item" title="인스타그램"><i data-lucide="instagram"></i><span>인스타그램</span></div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="save-tooth-hero">
+            <div class="container" style="max-width: 900px; margin: 0 auto;">
+                <div class="st-hero-text" style="margin-bottom: 50px;">
+                    <h1>임플라인치과는<br>자연치아를 최대한 보존합니다.</h1>
+                    <p>
+                        치아 속 신경이나 혈관 등 연조직을 일컫는 치수가 감염되거나 염증이 생겼을 때 이를 치료하는 방법입니다.<br>
+                        심한 충치나 외상, 치주염 등에 의해 치수가 손상된 경우 영구치를 발치하기 전 마지막으로 시도해 볼 수 있는<br>
+                        보존치료법입니다.
+                    </p>
+                </div>
+                <div class="st-hero-images">
+                    <div class="image-placeholder st-side">
+                        <!-- 세로 이미지: 환자와 대화하는 원장님 -->
+                    </div>
+                    <div class="image-placeholder st-main">
+                        <!-- 가로 이미지: 서류/명함 등 소품 사진 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cases Section -->
+        <section class="nerve-cases-section">
+            <div class="container nerve-cases-layout" style="display: flex; gap: 80px; align-items: flex-start; max-width: 800px; margin: 0 auto;">
+                <h2 style="font-size: 24px; font-weight: 500; min-width: 250px; color: #333; margin-top: 5px;">신경치료가 필요한 경우</h2>
+                <ul style="flex: 1; list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 20px; font-size: 15px; color: #555; position: relative; padding-left: 20px;">
+                        <span style="position: absolute; left: 0; top: 0; color: #337ab7; font-weight: 600;">·</span> 충치가 심해 치수 신경까지 감염 된 경우
+                    </li>
+                    <li style="margin-bottom: 20px; font-size: 15px; color: #555; position: relative; padding-left: 20px;">
+                        <span style="position: absolute; left: 0; top: 0; color: #337ab7; font-weight: 600;">·</span> 충치 부위가 깊어 충치를 제거 시 신경이 노출될 가능성이 높은 경우
+                    </li>
+                    <li style="margin-bottom: 20px; font-size: 15px; color: #555; position: relative; padding-left: 20px;">
+                        <span style="position: absolute; left: 0; top: 0; color: #337ab7; font-weight: 600;">·</span> 치아 형태 이상으로 신경치료가 필요한 경우
+                    </li>
+                    <li style="margin-bottom: 20px; font-size: 15px; color: #555; position: relative; padding-left: 20px;">
+                        <span style="position: absolute; left: 0; top: 0; color: #337ab7; font-weight: 600;">·</span> 보철치료 시 치아 삭제량이 많은 경우
+                    </li>
+                    <li style="margin-bottom: 20px; font-size: 15px; color: #555; position: relative; padding-left: 20px;">
+                        <span style="position: absolute; left: 0; top: 0; color: #337ab7; font-weight: 600;">·</span> 치아가 심각하게 마모되어 시린 경우
+                    </li>
+                    <li style="margin-bottom: 20px; font-size: 15px; color: #555; position: relative; padding-left: 20px;">
+                        <span style="position: absolute; left: 0; top: 0; color: #337ab7; font-weight: 600;">·</span> 치주질환으로 신경이 손상된 경우
+                    </li>
+                    <li style="margin-bottom: 20px; font-size: 15px; color: #555; position: relative; padding-left: 20px;">
+                        <span style="position: absolute; left: 0; top: 0; color: #337ab7; font-weight: 600;">·</span> 기존에 신경치료를 받은 치아 뿌리에 염증이 재발한 경우
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Steps Section -->
+        <section class="tooth-steps-section">
+            <div class="vertical-text-bg">dental clinic</div>
+            <div class="vertical-text-bg left">one more step</div>
+            
+            <div class="container">
+                <div class="ts-title">
+                    <h2>신경치료 과정</h2>
+                </div>
+                
+                <div class="ts-list">
+                    <div class="ts-item">
+                        <div class="ts-num">1단계</div>
+                        <div class="ts-text">
+                            <h3>치수강 개방 및 발수</h3>
+                            <p>염증에 감염된 치수를 제거하기 위해 신경을 최소한으로 개방하여 손상된 조직을 완전히 제거합니다.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="ts-item">
+                        <div class="ts-num">2단계</div>
+                        <div class="ts-text">
+                            <h3>근관 측정 및 확대</h3>
+                            <p>근관의 길이를 정확히 측정하고 소독 약제가 잘 도달할 수 있도록 근관 내부 공간을 넓히고 매끄럽게 다듬어 줍니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="ts-item">
+                        <div class="ts-num">3단계</div>
+                        <div class="ts-text">
+                            <h3>근관 세척 및 소독</h3>
+                            <p>감염 및 염증 조직으로 비워진 신경 공간을 특수 용액으로 여러 차례 세척하여 소독합니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="ts-item">
+                        <div class="ts-num">4단계</div>
+                        <div class="ts-text">
+                            <h3>근관 충전</h3>
+                            <p>신경 조직이 제거된 빈 공간이 다시 감염되지 않도록 인체에 무해한 특수 재료를 이용해 치밀하게 채워 밀폐합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Precautions Section -->
+        <section class="precautions-section" style="padding: 120px 0;">
+            <div class="container">
+                <div class="section-title center">
+                    <h2>신경치료 후 주의사항</h2>
+                </div>
+                <div class="precaution-grid">
+                    <div class="precaution-item">
+                        <span class="num">01</span>
+                        <p>신경치료 중에 있는 치아는 매우 약한 상태이므로 치료 중인 치아 쪽으로 씹지 않도록 주의해야 합니다.</p>
+                    </div>
+                    <div class="precaution-item">
+                        <span class="num">02</span>
+                        <p>치료 과정 또는 직후에는 일시적으로 통증이 발생할 수 있으며 많이 아프실 경우 진통제를 복용해 주세요.</p>
+                    </div>
+                    <div class="precaution-item">
+                        <span class="num">03</span>
+                        <p>마취가 풀리기 전 식사, 양치질 등을 과도하게 하시면 감각이 없어 자극을 모를 수 있으니 마취가 완전히 깬 후 식사해 주세요.</p>
+                    </div>
+                    <div class="precaution-item">
+                        <span class="num">04</span>
+                        <p>치료 도중 임시로 넣은 약재가 빠지거나 부서지면 내부가 감염될 수 있으니 식사에 큰 어려움이 없더라도 치과에 문의하시기 바랍니다.</p>
+                    </div>
+                    <div class="precaution-item">
+                        <span class="num">05</span>
+                        <p>신경치료가 완료된 치아는 영양분 공급이 차단되어 수분과 영양분이 부족해 쉽게 부러질 수 있어 반드시 크라운 등으로 보호해주어야 합니다.</p>
+                    </div>
+                    <div class="precaution-item">
+                        <span class="num">06</span>
+                        <p>치료가 완전히 끝나기 전까지는 염증 회복을 방해하는 음주와 흡연은 2~3주 정도 반드시 삼가주시기 바랍니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-title center">
+                    <h2>자주 묻는 질문</h2>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question"><span>Q.</span> 신경치료는 단번에 끝나는 치료가 아닌가요? <i data-lucide="chevron-down"></i></div>
+                        <div class="faq-answer"><p>보통 3~5회 정도 내원하여 치료를 받으셔야 합니다. 사람마다 신경관의 구조나 염증 정도가 다르기 때문에 여러 번의 치료가 필요할 수 있습니다.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question"><span>Q.</span> 신경치료를 하면 이가 약해진다는게 사실인가요? <i data-lucide="chevron-down"></i></div>
+                        <div class="faq-answer"><p>맞습니다. 치수로의 영양공급이 단절되기 때문에 수분이 없어 쉽게 부서질 수 있습니다. 이를 막기 위해 반드시 크라운 등 보철물을 씌워 보호해야 합니다.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question"><span>Q.</span> 크라운 치료는 꼭 해야 하나요? <i data-lucide="chevron-down"></i></div>
+                        <div class="faq-answer"><p>네, 신경치료 후 치아를 씌워주지 않으면 약해진 치아가 깨지거나, 세균이 침투하여 다시 아프게 될 수 있으므로 반드시 크라운을 씌워야 합니다.</p></div>
+                    </div>
+                    <div class="faq-item border-bottom">
+                        <div class="faq-question"><span>Q.</span> 신경치료 후 통증이 계속 지속되면 어떻게 하나요? <i data-lucide="chevron-down"></i></div>
+                        <div class="faq-answer"><p>치료 후 일시적으로 욱신거림이나 통증이 있을 수 있으나 시간이 지나면서 점차 완화됩니다. 하지만 진통제로도 조절되지 않는 심한 통증이 발생한다면 즉시 담당의와 상의하셔야 합니다.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer with Map -->
+    <footer class="sub-footer">
+        <div class="container map-footer-layout">
+            <div class="map-area">
+                <div class="image-placeholder map-placeholder">
+                    <!-- 지도 영역 -->
+                </div>
+            </div>
+            <div class="footer-info-area">
+                <div class="info-row">
+                    <div class="label">주소</div>
+                    <div class="value">경기 포천시 일동면 화동로 1052-1 3층 (임플라인치과의원 포천점)</div>
+                </div>
+                <div class="info-row">
+                    <div class="label">예약안내</div>
+                    <div class="value tel">031-8089-7582</div>
+                </div>
+                <div class="info-row">
+                    <div class="label">진료시간</div>
+                    <div class="value times">
+                        <span>월/수/목/금</span> 09:30 - 18:30<br>
+                        <span>화요일</span> 09:30 - 20:30<br>
+                        <span>토요일</span> 09:30 - 13:30<br>
+                        <span>점심시간</span> 13:00 - 14:00<br>
+                        <span class="holiday">휴진</span> 일요일, 공휴일
+                    </div>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">임플라인치과</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보 취급방침</a>
+                </div>
+                <p class="copyright">© Copyright 2022. 임플라인치과의원 포천점 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        lucide.createIcons();
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
