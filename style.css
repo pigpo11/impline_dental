@@ -442,6 +442,7 @@ section.visible .flex-content {
 #about {
     background-image: url('assets/포천 임플라인치과/추가/진료중.png');
     background-position: center center;
+    filter: grayscale(100%);
 }
 
 /* Remove old specific backgrounds for implant and care as they use feature-section now */
@@ -506,46 +507,58 @@ section.visible .flex-content {
 
 .quick-menu {
     position: fixed;
-    right: 40px;
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
     z-index: 999;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    background-color: #fcfcfc;
+    border: 1px solid #e5e5e5;
+    border-right: none;
+    border-radius: 18px 0 0 18px;
+    box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
 }
 
 .quick-item {
-    width: 54px;
-    height: 54px;
-    background: #fff;
-    border: 1px solid #eee;
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #efefef;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    transition: var(--transition-fast);
-    border-radius: 8px;
+    box-shadow: none;
+    transition: background-color 0.2s ease;
+    border-radius: 0;
     cursor: pointer;
-    overflow: hidden;
     position: relative;
+    text-decoration: none;
+}
+
+.quick-item:last-child {
+    border-bottom: none;
+}
+
+.quick-item svg {
+    width: 36px;
+    height: 36px;
 }
 
 .quick-item span {
-    font-size: 9px;
-    margin-top: 4px;
-    color: #666;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 5px;
+    color: #444;
     text-align: center;
-}
-
-.quick-item i {
-    font-size: 20px;
+    letter-spacing: -0.5px;
 }
 
 .quick-item:hover {
-    transform: translateX(-5px);
-    background: #fafafa;
+    background-color: #f2f2f2;
 }
 
 /* --- Doctor Section --- */

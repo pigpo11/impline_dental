@@ -29,7 +29,6 @@ body {
     position: relative;
     padding: 120px 0 80px;
     background: linear-gradient(135deg, #fdfdfd 0%, #f0f4f8 100%);
-    overflow: hidden;
 }
 
 .hero-layout {
