@@ -505,7 +505,7 @@ section.visible .flex-content {
 
 /* --- Quick Menu --- */
 
-.quick-menu {
+.quick-menu { display: none !important; 
     position: fixed;
     right: 0;
     top: 50%;
