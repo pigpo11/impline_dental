@@ -586,21 +586,19 @@ body {
 .masonry-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 100px 50px;
+    gap: 80px 60px;
     margin-top: 50px;
 }
 
 .masonry-item {
-    max-width: 80%;
+    width: 100%;
 }
 
-.masonry-item.right-align {
-    margin-left: auto;
-    margin-top: 150px;
-}
-
-.masonry-item.center-align {
-    margin: 0 auto;
+.fac-img {
+    width: 100%;
+    height: 500px; /* Increased for vertical photos */
+    overflow: hidden;
+    background-color: #f5f5f5;
 }
 
 .fac-text {

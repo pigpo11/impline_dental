@@ -212,7 +212,7 @@ nav ul li ul.dropdown li a:hover {
 
 .hero-image {
     flex: 1;
-    background: url('assets/hero_bg.png') no-repeat center center/cover;
+    background: url('assets/hero_main.png') no-repeat center center/cover;
     position: relative;
 }
 
@@ -317,6 +317,20 @@ section.visible .fullscreen-content {
     height: 100%;
     background-color: #ffffff;
     z-index: 1;
+}
+
+/* Reverse Feature Section for Alternating Layout */
+.feature-section.reverse::before {
+    left: 0;
+    right: auto;
+}
+
+.feature-section.reverse .flex-content {
+    flex-direction: row-reverse;
+}
+
+.feature-section.reverse .feature-image {
+    justify-content: flex-start;
 }
 
 /* Texture overlay for natural plaster/paper feel */
@@ -438,9 +452,19 @@ section.visible .flex-content {
     border-radius: 4px;
 }
 
+/* Specific Style for Doctor Philosophy Section to remove borders and increase size */
+#doctor-philosophy .feature-image img {
+    max-width: 100%;
+    height: 800px;
+    width: auto;
+    object-fit: contain;
+    box-shadow: none;
+    border-radius: 0;
+}
+
 /* Specific Section Backgrounds */
 #about {
-    background-image: url('assets/포천 임플라인치과/추가/진료중.png');
+    background-image: url('assets/main_treatment.png');
     background-position: center center;
     filter: grayscale(100%);
 }
@@ -564,33 +588,69 @@ section.visible .flex-content {
 /* --- Doctor Section --- */
 .doctor-section {
     display: flex;
-    min-height: 100vh;
+    height: 850px; /* Increased to accommodate full photo better */
     background-color: #f8f8f8;
     align-items: stretch;
     padding: 0;
-    opacity: 1; /* Reset default opacity from 'section' */
-    transform: none; /* Reset default transform from 'section' */
+    opacity: 1;
+    transform: none;
 }
 
 .doctor-image {
     flex: 1;
-    background-color: #e6e0d8; /* Image 1 left background */
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    position: relative;
+    background-color: #fff;
+    position: relative; /* Base for absolute image */
     overflow: hidden;
 }
 
 .doctor-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain; /* Show the full image without fail */
+    object-position: center bottom;
+}
+
+.doctor-overlay-text {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    z-index: 5;
+    color: #444;
+}
+
+.doctor-overlay-text .subtitle {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    letter-spacing: -1px;
+}
+
+.doctor-overlay-text .title {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    letter-spacing: -2px;
+}
+
+.doctor-overlay-text .name {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.doctor-overlay-text .name span {
+    font-family: serif; /* More elegant for signature feel if font exists */
+    font-size: 32px;
+    margin-left: 10px;
+    font-weight: 500;
 }
 
 .doctor-content {
     flex: 1.2;
-    padding: 150px 100px;
+    padding: 100px 100px; /* Reduced from 150px */
     display: flex;
     flex-direction: column;
     justify-content: center;
