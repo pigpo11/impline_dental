@@ -900,3 +900,85 @@ footer {
         display: none;
     }
 }
+
+/* --- Night Clinic Section --- */
+.night-clinic-section {
+    height: 100vh;
+    background: url('assets/night_clinic_bg.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.night-clinic-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.night-content {
+    position: relative;
+    z-index: 10;
+    padding: 20px;
+}
+
+.night-label {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.night-label b {
+    font-weight: 600;
+    color: #f7d774;
+}
+
+.night-main-title {
+    font-size: 90px;
+    font-weight: 400;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.night-box {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 5px 25px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.night-sub-label {
+    font-size: 32px;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 45px;
+}
+
+.night-desc {
+    font-size: 20px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+    .night-main-title { font-size: 60px; }
+    .night-box { padding: 5px 15px; }
+}
+
+@media (max-width: 768px) {
+    .night-clinic-section { height: auto; padding: 100px 20px; }
+    .night-main-title { font-size: 40px; flex-wrap: wrap; }
+    .night-label { font-size: 18px; }
+    .night-sub-label { font-size: 20px; }
+    .night-desc { font-size: 16px; }
+}
