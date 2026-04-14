@@ -136,16 +136,21 @@ nav.desktop-nav ul li a.active {
 .mobile-menu-btn {
     display: none;
     flex-direction: column;
-    gap: 5px;
+    gap: 6px;
     cursor: pointer;
     z-index: 2000;
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
 }
 
 .mobile-menu-btn span {
     display: block;
-    width: 25px;
+    width: 28px;
     height: 2px;
-    background-color: #333;
+    background-color: #222;
     transition: all 0.3s ease;
 }
 
@@ -935,7 +940,7 @@ footer {
     }
 
     .mobile-menu-btn {
-        display: flex;
+        display: flex !important;
     }
 
     .hero-content {
