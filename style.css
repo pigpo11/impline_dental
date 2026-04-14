@@ -127,10 +127,87 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
+nav.desktop-nav ul li a:hover,
+nav.desktop-nav ul li a.active {
     color: #337ab7;
 }
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.mobile-menu-btn span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Nav Menu */
+.mobile-nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: #fff;
+    z-index: 1500;
+    transition: right 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: -5px 0 30px rgba(0,0,0,0.1);
+    padding: 100px 30px 40px;
+}
+
+.mobile-nav-menu.active {
+    right: 0;
+}
+
+.mobile-nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1400;
+    display: none;
+}
+
+.mobile-nav-overlay.active {
+    display: block;
+}
+
+.mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.mobile-nav-list li {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.mobile-nav-list a {
+    color: #222;
+}
+
+/* Hamburger Animation */
+.mobile-menu-btn.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.mobile-menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+.mobile-menu-btn.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
 
 /* Dropdown Menu Styles */
 nav ul li ul.dropdown {
@@ -843,11 +920,22 @@ footer {
 
 @media (max-width: 1024px) {
     #main-header {
-        padding: 12px 20px !important;
+        background: #ffffff !important;
+        padding: 15px 25px !important;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.06) !important;
+        height: 70px;
     }
     
     .header-logo-img {
-        height: 40px !important;
+        height: 38px !important;
+    }
+
+    .desktop-nav {
+        display: none !important;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
     }
 
     .hero-content {
@@ -930,10 +1018,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-    #main-header nav {
-        display: none; /* Simple fix for now: hide nav on mobile if not properly handled with hamburger */
-    }
-    
     .hero-text h1 {
         font-size: 26px !important;
     }
