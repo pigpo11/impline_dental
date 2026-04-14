@@ -1139,10 +1139,16 @@ footer {
         word-break: keep-all !important;
     }
 
-    .p-item p {
-        font-size: 14px !important;
-        line-height: 1.7 !important;
-        max-width: 100% !important;
+    /* Remove white overlay/shadow in Philosophy section on mobile */
+    .philosophy-section .window-shadow,
+    .philosophy-section .feature-texture,
+    .philosophy-section::before {
+        display: none !important;
+    }
+
+    .philosophy-section {
+        background: #ffffff !important;
+        padding: 60px 20px !important;
     }
 
     /* Gallery Section Fix for 1 column in mobile */
