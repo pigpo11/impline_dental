@@ -148,17 +148,10 @@ nav.desktop-nav ul li a.active {
 
 .mobile-menu-btn span {
     display: block;
-    width: 28px;
-    height: 2px;
-    background-color: #222;
+    width: 25px;
+    height: 3px;
+    background-color: #000;
     transition: all 0.3s ease;
-}
-
-.mobile-menu-btn::after {
-    content: 'MENU';
-    font-size: 10px;
-    color: #222;
-    margin-top: 2px;
 }
 
 
@@ -950,10 +943,11 @@ footer {
     .mobile-menu-btn {
         display: flex !important;
         position: absolute;
-        right: 15px;
+        right: 20px;
         top: 50%;
         transform: translateY(-50%);
-        border: 1px solid red; /* Debug border */
+        visibility: visible !important;
+        opacity: 1 !important;
     }
 
     .hero-content {
