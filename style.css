@@ -929,11 +929,15 @@ footer {
 
 @media (max-width: 1024px) {
     #main-header {
-        background: transparent !important;
-        padding: 15px 25px !important;
-        box-shadow: none !important;
-        height: auto;
+        background: #ffffff !important;
+        padding: 0 20px !important;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
+        height: 70px !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
         z-index: 10000 !important;
+        position: fixed !important;
     }
 
     .header-logo-img {
@@ -946,13 +950,18 @@ footer {
 
     .mobile-menu-btn {
         display: flex !important;
-        position: fixed !important;
-        right: 20px !important;
-        top: 20px !important;
-        z-index: 1000000 !important;
-        visibility: visible !important;
-        opacity: 1 !important;
+        position: relative !important;
+        right: 0 !important;
+        top: 0 !important;
+        transform: none !important;
+        z-index: 20000 !important;
         background: transparent !important;
+        margin-left: auto;
+    }
+
+    /* Inline alignment for content */
+    .container {
+        padding: 0 20px !important;
     }
 
     .hero-content {
