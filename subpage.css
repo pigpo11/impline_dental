@@ -1041,6 +1041,8 @@ body {
     
     .target-list li {
         text-align: left;
-        display: inline-block;
+        display: block !important;
+        width: 100%;
     }
+
 }
