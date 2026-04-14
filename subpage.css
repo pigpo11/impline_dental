@@ -1008,7 +1008,32 @@ body {
     }
 
     .special-items {
-        flex-direction: column;
+        flex-direction: column !important;
+        gap: 40px !important;
+    }
+
+    .s-item {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+        height: auto !important;
+    }
+
+    .s-img {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16/9 !important;
+    }
+    
+    .ip-layout, .sedation-layout, .insurance-layout, .flex-content, .hero-layout {
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+    
+    .ip-image, .sedation-image, .ins-img, .feature-image {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16/9 !important;
     }
     
     .map-footer-layout {
