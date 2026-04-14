@@ -1005,15 +1005,23 @@ footer {
         height: auto !important;
     }
 
-    /* Home Hero Fix */
-    .home-hero {
-        padding-top: 140px !important;
-        background-attachment: scroll !important;
+    /* Home Hero Fix (Tightened Centering) */
+    .home-hero, .hero-content, .hero-text {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
         text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 
-    .main-title { font-size: 26px !important; line-height: 1.4 !important; word-break: keep-all !important; color: #111 !important; }
-    .main-desc { font-size: 15px !important; line-height: 1.7 !important; word-break: keep-all !important; margin-top: 20px !important; color: #555 !important; }
+    .home-hero { padding-top: 140px !important; background-attachment: scroll !important; }
+    .main-title { font-size: 26px !important; line-height: 1.5 !important; margin: 0 auto 25px !important; width: 90% !important; word-break: keep-all !important; }
+    .main-desc { font-size: 15px !important; line-height: 1.8 !important; margin: 0 auto !important; width: 85% !important; word-break: keep-all !important; color: #555 !important; }
 
     /* Subpage Hero Fix */
     .subpage-hero { padding-top: 120px !important; }
