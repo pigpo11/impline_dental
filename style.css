@@ -1088,28 +1088,51 @@ footer {
     .type-item .type-desc { font-size: 15px !important; line-height: 1.7 !important; color: #555 !important; word-break: keep-all !important; }
 
     /* Philosophy / Fullscreen Section Fix */
-    .fullscreen-content, .philosophy-header { width: 100% !important; text-align: center !important; margin: 0 !important; }
-    .phil-title { font-size: 24px !important; line-height: 1.4 !important; word-break: keep-all !important; margin-bottom: 50px !important; }
-    
+    /* Vision Section (Fullscreen) Final Desired Look Fix */
+    .fullscreen-section {
+        padding: 0 !important;
+        height: 60vh !important;
+        min-height: 450px !important;
+    }
+
+    .fullscreen-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 20px !important;
+        box-sizing: border-box !important;
+        text-align: center !important;
+        position: relative !important;
+        z-index: 5 !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        margin: 0 !important;
+    }
+
     .vision-title { 
-        font-size: 19px !important; 
+        font-size: 18px !important; 
         line-height: 1.6 !important; 
         word-break: normal !important; 
         overflow-wrap: break-word !important;
-        width: 95% !important; 
+        width: 100% !important; 
         margin: 0 auto !important; 
+        color: #fff !important;
     }
     
     .vision-desc {
-        font-size: 14px !important;
+        font-size: 13.5px !important;
         line-height: 1.7 !important;
-        color: rgba(255,255,255,0.9) !important;
-        margin-top: 20px !important;
-        width: 100% !important;
+        color: rgba(255,255,255,0.85) !important;
+        margin-top: 25px !important;
+        width: 90% !important; 
+        margin-left: auto !important;
+        margin-right: auto !important;
         word-break: normal !important;
         overflow-wrap: break-word !important;
     }
 
+    .philosophy-header, .phil-title { width: 100% !important; text-align: center !important; }
+    .phil-title { font-size: 22px !important; line-height: 1.4 !important; word-break: keep-all !important; margin-bottom: 50px !important; }
+    
     .philosophy-list { display: flex !important; flex-direction: column !important; gap: 40px !important; margin-top: 40px !important; }
     .p-item { text-align: center !important; border-bottom: 1px solid #eee !important; padding-bottom: 30px !important; }
     .p-item h3 { font-size: 20px !important; white-space: normal !important; word-break: keep-all !important; }
