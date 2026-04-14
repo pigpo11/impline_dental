@@ -60,7 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     // Mobile Menu Toggle
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn, #forced-mobile-btn');
+
     const mobileNavMenu = document.querySelector('.mobile-nav-menu');
     const mobileNavOverlay = document.querySelector('.mobile-nav-overlay');
     const mobileNavLinks = document.querySelectorAll('.mobile-nav-list a');
