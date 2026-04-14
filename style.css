@@ -1026,6 +1026,26 @@ footer {
         height: 250px !important;
     }
 
+    /* Footer Overlap Fix */
+    .info-grid, .map-footer-layout {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+
+    .info-map, .map-area, .map-placeholder {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16/9 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .info-styled-table, .footer-info-area {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        width: 100% !important;
+    }
+
     /* Force block layout for flex containers that might overflow */
     .hero-layout, .info-grid, .material-layout, .insurance-layout, .flex-content, .profile-layout, .ip-layout {
         flex-direction: column !important;

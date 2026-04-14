@@ -1011,13 +1011,22 @@ body {
         flex-direction: column;
     }
     
-    .ip-layout, .sedation-layout, .insurance-layout {
-        flex-direction: column;
+    .map-footer-layout {
+        flex-direction: column !important;
+        gap: 30px !important;
     }
     
-    .ip-image {
-        height: 300px;
+    .map-area, .map-placeholder {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16/9 !important;
     }
+
+    .footer-info-area {
+        width: 100% !important;
+        margin-top: 0 !important;
+    }
+
 }
 
 @media (max-width: 768px) {
