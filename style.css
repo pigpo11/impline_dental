@@ -132,6 +132,35 @@ nav.desktop-nav ul li a.active {
     color: #337ab7;
 }
 
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 0 100px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gallery-img {
+    height: 450px;
+    overflow: hidden;
+}
+
+.gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.gallery-img img:hover {
+    transform: scale(1.03);
+}
+
+
 /* Mobile Menu Button */
 .mobile-menu-btn {
     display: none;
@@ -984,6 +1013,17 @@ footer {
     img, video, iframe, table {
         max-width: 100% !important;
         height: auto !important;
+    }
+
+    /* Gallery Section Fix for 1 column in mobile */
+    .gallery-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 0 20px !important;
+    }
+
+    .gallery-img {
+        height: 250px !important;
     }
 
     /* Force block layout for flex containers that might overflow */
