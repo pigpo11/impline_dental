@@ -154,6 +154,14 @@ nav.desktop-nav ul li a.active {
     transition: all 0.3s ease;
 }
 
+.mobile-menu-btn::after {
+    content: 'MENU';
+    font-size: 10px;
+    color: #222;
+    margin-top: 2px;
+}
+
+
 /* Mobile Nav Menu */
 .mobile-nav-menu {
     position: fixed;
