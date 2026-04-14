@@ -1023,8 +1023,49 @@ footer {
     .main-title { font-size: 26px !important; line-height: 1.5 !important; margin: 0 auto 25px !important; width: 90% !important; word-break: keep-all !important; }
     .main-desc { font-size: 15px !important; line-height: 1.8 !important; margin: 0 auto !important; width: 85% !important; word-break: keep-all !important; color: #555 !important; }
 
-    /* Subpage Hero Fix */
-    .subpage-hero { padding-top: 120px !important; }
+    /* Medical Systems (Facilities Section) Mobile Fix */
+    .facilities-section { padding: 60px 0 !important; }
+    .vertical-text-bg { display: none !important; }
+    
+    .masonry-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 40px !important;
+        padding: 0 20px !important;
+    }
+
+    .masonry-item {
+        width: 100% !important;
+        background: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+    }
+
+    .fac-img {
+        height: auto !important;
+        background: none !important;
+        padding: 0 !important;
+        margin-bottom: 20px !important;
+        border-radius: 12px !important;
+        overflow: hidden !important;
+    }
+
+    .fac-img img {
+        width: 100% !important;
+        height: auto !important;
+        display: block !important;
+        object-fit: contain !important;
+    }
+
+    .fac-text { text-align: left !important; padding: 0 !important; }
+    .fac-text h4 { font-size: 20px !important; margin-bottom: 10px !important; }
+    .fac-text p { font-size: 15px !important; line-height: 1.6 !important; }
+
+    /* Restore subpage hero visibility */
+    .subpage-hero {
+        padding-top: 100px !important;
+    }
+
     .subpage-hero h1 { font-size: 26px !important; line-height: 1.4 !important; word-break: keep-all !important; }
     .subpage-hero .hero-subtext { font-size: 14px !important; word-break: keep-all !important; margin-top: 15px !important; }
 
