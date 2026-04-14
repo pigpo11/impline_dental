@@ -150,9 +150,10 @@ nav.desktop-nav ul li a.active {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #000;
+    background-color: #000 !important;
     transition: all 0.3s ease;
 }
+
 
 .desktop-nav {
     display: block;
