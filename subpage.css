@@ -103,7 +103,21 @@ body {
     line-height: 1.6;
 }
 
+.hero-desc-box-sub {
+    background: rgba(255,255,255,0.95);
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin-top: -60px;
+    position: relative;
+    z-index: 10;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.8;
+}
+
 /* --- Target Section --- */
+
 .target-section {
     padding: 100px 0;
     background-color: #fcfcfc;
@@ -1049,7 +1063,16 @@ body {
     }
 
     
+    .hero-desc-box-sub {
+        margin-top: 20px !important;
+        padding: 20px !important;
+        font-size: 14px !important;
+        box-shadow: none !important;
+        border: 1px solid #eee !important;
+    }
+
     .ip-layout, .sedation-layout, .insurance-layout, .flex-content, .hero-layout {
+
         flex-direction: column !important;
         gap: 30px !important;
     }
