@@ -154,8 +154,10 @@ nav.desktop-nav ul li a.active {
     transition: all 0.3s ease;
 }
 
+.desktop-nav {
+    display: block;
+}
 
-/* Mobile Nav Menu */
 .mobile-nav-menu {
     position: fixed;
     top: 0;
@@ -930,8 +932,9 @@ footer {
         padding: 15px 25px !important;
         box-shadow: 0 2px 15px rgba(0,0,0,0.06) !important;
         height: 70px;
+        z-index: 10000 !important;
     }
-    
+
     .header-logo-img {
         height: 38px !important;
     }
@@ -946,6 +949,7 @@ footer {
         right: 20px;
         top: 50%;
         transform: translateY(-50%);
+        z-index: 20000 !important;
         visibility: visible !important;
         opacity: 1 !important;
     }
