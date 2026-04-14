@@ -941,6 +941,11 @@ footer {
 
     .mobile-menu-btn {
         display: flex !important;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 1px solid red; /* Debug border */
     }
 
     .hero-content {
