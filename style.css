@@ -190,8 +190,8 @@ nav ul li ul.dropdown li a:hover {
 }
 
 .hero-text {
-    flex: 1;
-    padding: 0 100px;
+    flex: 0.8;
+    padding: 0 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -211,7 +211,7 @@ nav ul li ul.dropdown li a:hover {
 }
 
 .hero-image {
-    flex: 1;
+    flex: 1.2;
     background: url('assets/hero_main_new.png') no-repeat center center/cover;
     position: relative;
 }
@@ -298,13 +298,13 @@ section.visible .fullscreen-content {
 /* --- Feature Sections (Reference Image Style) --- */
 
 .feature-section {
-    height: 100vh;
+    min-height: 100vh;
+    padding: 100px 0;
     display: flex;
     align-items: center;
     position: relative;
     background-color: #f6f5f3;
     /* Left side background (Light beige) */
-    overflow: hidden;
 }
 
 /* Right side background - pure white split */
@@ -446,7 +446,7 @@ section.visible .flex-content {
 .feature-image img {
     width: 100%;
     max-width: 550px;
-    height: 650px;
+    height: auto;
     object-fit: cover;
     box-shadow: 20px 40px 80px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
