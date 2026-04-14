@@ -751,7 +751,24 @@ body {
     flex-grow: 1;
 }
 
+.sedation-certs {
+    display: flex;
+    gap: 15px;
+    height: 200px;
+    margin-top: 15px;
+}
+
+.cert-img {
+    width: 48%;
+    height: 100%;
+    object-fit: contain;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
 .s-img {
+
     height: 250px;
     width: 100%;
     border-radius: 4px;
@@ -1019,11 +1036,18 @@ body {
         height: auto !important;
     }
 
-    .s-img {
+    .sedation-certs {
+        flex-direction: column !important;
+        height: auto !important;
+        gap: 15px !important;
+    }
+
+    .cert-img {
         width: 100% !important;
         height: auto !important;
-        aspect-ratio: 16/9 !important;
+        aspect-ratio: 4/3 !important;
     }
+
     
     .ip-layout, .sedation-layout, .insurance-layout, .flex-content, .hero-layout {
         flex-direction: column !important;
